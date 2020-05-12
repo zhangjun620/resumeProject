@@ -1,0 +1,105 @@
+html{
+    background-color:#f7d7b5 ;
+    color: #351c75;
+}
+section {
+    margin: 0 auto;
+    font-size: 35px;
+    perspective: 400px;
+}
+
+div{
+    height: 50px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.hinge{
+    animation: hingei 2s infinite;
+    transform-origin:10px 10px;
+}
+.rotateOut{
+    animation: rotateOut 2s infinite;
+}
+.rotateIn{
+    animation: rIn 2s infinite;
+}
+.flip{
+    animation: flipi 1.5s infinite;
+}
+.bounce{
+    animation: bouncei 1.5s ;
+}
+@keyframes hingei{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(80deg);
+    }
+    50%{
+        transform: rotate(60deg);
+    }
+    75%{
+        transform: rotate(80deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(80deg);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+}
+@keyframes rotateOut{
+    0%{
+        transform: rotateZ(0deg)
+    }
+    90%{
+        transform: rotateZ(180deg)
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes rIn{
+    0%{
+        transform: rotateZ(180deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotateZ(0);
+        opacity: 1;
+    }
+
+}
+@keyframes flipi{
+    0%{
+    }
+    50%{
+        font-size: 50px;
+        transform: rotateY(180deg);
+    }
+    100%{
+        font-size: 35px;
+        transform: rotateY(360deg);
+    }
+}
+@keyframes bouncei{
+    40%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(-20px);
+    }
+    80%{
+        transform: translateY(0px);    
+    }
+    90%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
