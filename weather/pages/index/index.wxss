@@ -1,0 +1,46 @@
+image{
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+.header{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 300;
+  font-size: 60rpx;
+  
+}
+.title{
+  margin-top: 70rpx;
+}
+.wea{
+  font-size: 40rpx;
+}
+.tem_day{
+  font-size: 120rpx;
+  letter-spacing: 10rpx;
+}
+.wea_week{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  margin-top: 100rpx;
+  padding: 0 20rpx;
+  border-top: 5rpx solid white;
+  border-bottom: 5rpx solid white;
+}
+.wea_list{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx 0;
+}
+
+.choose_city{
+  color: white;
+  margin-top: 40rpx;
+  width: 100%; 
+  padding: 0 40rpx;
+}
